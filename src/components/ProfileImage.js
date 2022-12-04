@@ -12,12 +12,12 @@ class ProfileImage extends React.Component {
     const name = this.props.name;
 
     return (
-      <div className="column">
+      <aside className="aside">
         <img src={image} alt={name} />
         <p>
-          My name is <span className="name">{name}</span>. 
+          My name is <span className="name">{name}</span> 
         </p>
-      </div>
+      </aside>
     );
   }
 };

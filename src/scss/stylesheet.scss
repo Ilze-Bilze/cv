@@ -1,0 +1,44 @@
+@import './mixins/typography';
+@import './colors';
+@import './normalize';
+@import './typography';
+@import './header';
+@import './aside';
+@import './article';
+
+.App {
+  position: relative;
+  @media only screen and (max-width: 640px) {
+    width: 95vw;
+  }
+  @media only screen and (min-width: 641px) and (max-width: 768px) {
+    width: 90vw;
+  }
+  width: 80vw;
+  max-width: 1000px;
+  border: 5px solid $light-green;
+  margin: 0 auto;
+  padding: 30px 30px 200px 30px;
+
+  &::before {
+    position: absolute;
+    top: 90px;
+    left: 42.6%;
+    display: inline-block;
+    @media only screen and (max-width: 640px) {
+      display: none;
+    }
+    content: '';
+    width: 4px;
+    height: 90%;
+    background-color: $salmon;
+  }
+}
+
+.wrapper {
+  display: grid;
+  @media only screen and (max-width: 640px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  grid-template-columns: repeat(2, 1fr);
+}

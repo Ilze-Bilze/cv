@@ -1,0 +1,31 @@
+aside {
+  position: relative;
+  top: 30px;
+  width: 73%;
+
+  p {
+    position: relative;
+    top: -10px;
+    left: -140px;
+    font-family: $title-font;
+    color: $green;
+    @include fluid-type(font-size, 320px, 1366px, 25px, 48px);
+    @media only screen and (max-width: 640px) {
+      left: -55px;
+      width: 125%;
+    }
+    @media only screen and (min-width: 641px) and (max-width: 768px) {
+      width: 140%;
+    }
+    width: 120%;
+    transform: rotate(-10deg) translateX(50%) translateY(-50%);
+
+    .name {
+      color: $salmon;
+    }
+  }
+}
+
+img {
+  width: 100%;
+}

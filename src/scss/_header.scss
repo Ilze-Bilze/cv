@@ -1,0 +1,55 @@
+.app-header {
+  position: relative;
+  @media only screen and (max-width: 640px) {
+    left: 0;
+  }
+  @media only screen and (min-width: 641px) and (max-width: 768px) {
+    left: -28px;
+  }
+  left: 6.39%;
+  width: 100%;
+  max-width: 764px;
+  text-align: right;
+
+  h1 {
+    display: inline-block;
+    line-height: 1;
+    color: $gray;
+
+    .front-end {
+      @include fluid-type(font-size, 320px, 1366px, 30px, 96px);
+    }
+
+    .web-dev {
+      @include fluid-type(font-size, 320px, 1366px, 30px, 80px);
+    }
+  }
+
+  .hey {
+    @include fluid-type(font-size, 320px, 1366px, 30px, 96px);
+    color: $salmon;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 2rem;
+    color: $salmon;
+    position: relative;
+    display: block;
+
+    span {
+      position: relative;
+      z-index: 2;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.paragraph {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  max-width: 350px;
+  width: 80%;
+}

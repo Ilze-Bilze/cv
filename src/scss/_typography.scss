@@ -1,0 +1,38 @@
+$body-font: 'PT Sans Narrow', sans-serif;
+$title-font: 'Shadows Into Light', cursive;
+
+html {
+  @include fluid-type(font-size, 320px, 1366px, 16px, 20px);
+}
+
+body {
+  font-family: $body-font;
+  color: $gray;
+}
+  
+h1 {
+  font-family: $title-font;
+  font-weight: normal;
+  margin: 0;
+}
+
+h2 {
+  @include fluid-type(font-size, 320px, 1366px, 30px, 64px);
+}
+
+h3 {
+  @include fluid-type(font-size, 320px, 1366px, 20px, 24px);
+}
+
+h2,h3,h4,h5,h6 span {
+  font-weight: normal;
+  font-family: $title-font;
+  margin: 0;
+  line-height: 1;
+}
+
+.hey {
+  font-family: $title-font;
+  font-weight: normal;
+  margin: 0;
+}

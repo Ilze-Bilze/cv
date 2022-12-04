@@ -2,8 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <header className="App-header">
-      <div className="top">
+    <section className="skills">
       <h2>Skills:</h2>
       <ul>
         <li>UX/UI design and implementation</li>
@@ -20,19 +19,18 @@ const Skills = () => {
         <li>Implementation of javascript libraries (jQuery)</li>
       </ul>
       <h3>CMS:</h3>
-        <ul>
-          <li>Drupal 7, 8 and 9 (including installation, upgrade and theming, site bulding and template building)</li>
-        </ul>
-        <h3>Work with:</h3>
-        <ul>
-        <li>Drush</li>
-        <li>Composer</li>
-        <li>Git</li>
-        <li>GraphQL</li>
-        <li>Figma</li>
-        </ul>
-      </div>
-    </header>
+      <ul>
+        <li>Drupal 7, 8 and 9 (including installation, upgrade and theming, site bulding and template building)</li>
+      </ul>
+      <h3>Work with:</h3>
+      <ul>
+      <li>Drush</li>
+      <li>Composer</li>
+      <li>Git</li>
+      <li>GraphQL</li>
+      <li>Figma</li>
+      </ul>
+    </section>
   );
 };
 

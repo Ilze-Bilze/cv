@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
+// import './scss/styles.js';
 import Header from './components/Header';
 import ProfileImage from './components/ProfileImage';
 import Bio from './components/Bio';
@@ -13,9 +14,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <ProfileImage image={image} name={name} />
-        <Bio />
-        <Skills />
+        <section className="wrapper">
+          <ProfileImage image={image} name={name} />
+          <article className="bio">
+            <Bio />
+            <Skills />
+          </article>
+        </section>
       </div>
     );
   }

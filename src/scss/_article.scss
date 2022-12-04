@@ -1,0 +1,25 @@
+article {
+  position: relative;
+  top: 110px;
+  @media only screen and (max-width: 640px) {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  left: -5%;
+  width: 105%;
+
+  h2, h3 {
+    color: $green;
+  }
+}
+
+.skills {
+  position: relative;
+  top: 70px;
+
+  ul {
+    border-bottom: 1px solid $light-green;
+    padding: 15px 15px 20px 15px;
+  }
+}
