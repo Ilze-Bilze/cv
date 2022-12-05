@@ -22,10 +22,10 @@
 
   &::before {
     position: absolute;
-    top: 90px;
-    left: 42.6%;
+    top: 88px;
+    right: 26.8rem;
     display: inline-block;
-    @media only screen and (max-width: 640px) {
+    @media only screen and (min-width: 320px) and (max-width: 1370px) {
       display: none;
     }
     content: '';
