@@ -1,6 +1,4 @@
 import React from 'react';
-// import './App.css';
-// import './scss/styles.js';
 import Header from './components/Header';
 import ProfileImage from './components/ProfileImage';
 import Bio from './components/Bio';
